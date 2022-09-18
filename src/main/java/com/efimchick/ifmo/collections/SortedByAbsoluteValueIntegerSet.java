@@ -1,5 +1,10 @@
 package com.efimchick.ifmo.collections;
 
-class SortedByAbsoluteValueIntegerSet {
+import java.util.*;
+
+public class SortedByAbsoluteValueIntegerSet extends TreeSet<Integer> {
+    public SortedByAbsoluteValueIntegerSet() {
+        super(Comparator.comparingInt(Math::abs));
+    }
 
 }
